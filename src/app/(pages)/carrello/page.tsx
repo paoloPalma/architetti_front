@@ -21,6 +21,8 @@ export default function CartPage() {
     }, 0);
   };
 
+
+
   const subtotal = calculateSubtotal();
   const total = subtotal; // No additional fees in this example
 
@@ -41,11 +43,12 @@ export default function CartPage() {
     setQuantities(newQuantities);
   };
 
+
+
   return (
     <div>
           <Header />
-
-      <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8">
         <div className="flex items-center mb-6">
           <h1 className="text-3xl font-bold text-[#1e4e6f]">Il tuo carrello</h1>
           <div className="ml-auto bg-[#c5dbd9] text-[#1e4e6f] px-3 py-1 rounded-full text-sm font-medium">
@@ -56,6 +59,7 @@ export default function CartPage() {
         {/* Notification - only show if cart has items */}
         {cartCourses.length > 0 && (
           <div className="bg-[#e6f3f2] border-l-4 border-[#1e4e6f] p-4 mb-8 flex items-start">
+
             <div className="mr-2 text-[#1e4e6f]">✓</div>
             <p className="text-[#1e4e6f]">
               <span className="font-semibold">
